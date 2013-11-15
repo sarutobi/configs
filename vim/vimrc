@@ -30,14 +30,15 @@ Bundle 'Valloric/YouCompleteMe'
 Bundle 'nvie/vim-flake8'
 Bundle 'flazz/vim-colorschemes'
 Bundle 'w0ng/vim-hybrid'
+Bundle 'klen/python-mode'
 
 filetype on
 filetype plugin indent on
 
 "Color setup
 syntax on
-colorscheme molokai 
 let g:rehash256=1
+colorscheme molokai 
 set background=dark
 highlight Pmenu ctermbg=7 ctermfg=0 guibg=blue
 highlight PmenuSel ctermbg=4 ctermfg=7 guibg=blue guifg=white
@@ -48,18 +49,13 @@ set backspace=2
 "Footer setup
 set laststatus=2
 set cmdheight=1
-"set statusline=%t\ %y%m%r%w%h\ %v:%l/%L(%p%%)%([%{tagbar#currenttag('[%s]','')}]%)%{fugitive#statusline()}
 
 "Tab options
-set autoindent " автоотступы
-"set tabstop=4 " размер таба
+set autoindent
 set softtabstop=4
 set shiftwidth=4
 set expandtab
 set smarttab
-
-" set cursorline
-" set nocursorline
 
 "Fold defaults
 "set foldcolumn=3
