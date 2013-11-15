@@ -6,6 +6,32 @@ set history=500 " длина истории команд
 set undolevels=100 " память отмен
 set ttyfast " ???
 
+filetype off
+
+"Pathogen
+execute pathogen#infect()
+"Vundle
+call vundle#rc()
+
+"-----------------
+" Bundles
+"----------------- 
+Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'Shougo/neocomplcache'
+Bundle 'scrooloose/syntastic'
+Bundle 'fholgado/minibufexpl.vim'
+Bundle 'majutsushi/tagbar'
+Bundle 'tpope/vim-fugitive'
+Bundle 'itchyny/lightline.vim'
+Bundle 'gmarik/vundle'
+Bundle 'Valloric/YouCompleteMe'
+Bundle 'nvie/vim-flake8'
+
+filetype on
+filetype plugin indent on
+
 "Allow delete characters by backspace in insert mode
 set backspace=2
 
@@ -52,27 +78,6 @@ set autowrite
 set mouse=a " с поддержкой мыши
 set mousemodel=popup
 
-"Pathogen
-execute pathogen#infect()
-"Vundle
-call vundle#rc()
-
-filetype on
-filetype plugin on
-"-----------------
-" Bundles
-"----------------- 
-Bundle 'nathanaelkane/vim-indent-guides'
-Bundle 'scrooloose/nerdtree'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'Shougo/neocomplcache'
-Bundle 'scrooloose/syntastic'
-Bundle 'fholgado/minibufexpl.vim'
-Bundle 'majutsushi/tagbar'
-Bundle 'tpope/vim-fugitive'
-Bundle 'itchyny/lightline.vim'
-Bundle 'gmarik/vundle'
-Bundle 'Valloric/YouCompleteMe'
 
 " NERDTree
 let NERDTreeIgnore=['\.pyc$', '\~$']
