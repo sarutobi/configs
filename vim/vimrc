@@ -72,7 +72,7 @@ Bundle 'majutsushi/tagbar'
 Bundle 'tpope/vim-fugitive'
 Bundle 'itchyny/lightline.vim'
 Bundle 'gmarik/vundle'
-Bundle 'valloric/YouCompleteMe'
+Bundle 'Valloric/YouCompleteMe'
 
 " NERDTree
 let NERDTreeIgnore=['\.pyc$', '\~$']
