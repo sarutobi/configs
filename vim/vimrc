@@ -34,6 +34,14 @@ Bundle 'w0ng/vim-hybrid'
 filetype on
 filetype plugin indent on
 
+"Color setup
+syntax on
+colorscheme molokai 
+let g:rehash256=1
+set background=dark
+highlight Pmenu ctermbg=7 ctermfg=0 guibg=blue
+highlight PmenuSel ctermbg=4 ctermfg=7 guibg=blue guifg=white
+
 "Allow delete characters by backspace in insert mode
 set backspace=2
 
@@ -50,14 +58,8 @@ set shiftwidth=4
 set expandtab
 set smarttab
 
-"Color setup
-syntax on
-colorscheme molokai 
 " set cursorline
 " set nocursorline
-set background=dark " чтоб подсветка правильно работала
-highlight Pmenu ctermbg=7 ctermfg=0 guibg=blue
-highlight PmenuSel ctermbg=4 ctermfg=7 guibg=blue guifg=white
 
 "Fold defaults
 "set foldcolumn=3
