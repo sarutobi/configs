@@ -28,6 +28,8 @@ Bundle 'itchyny/lightline.vim'
 Bundle 'gmarik/vundle'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'nvie/vim-flake8'
+Bundle 'flazz/vim-colorschemes'
+Bundle 'w0ng/vim-hybrid'
 
 filetype on
 filetype plugin indent on
