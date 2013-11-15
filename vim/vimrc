@@ -31,6 +31,7 @@ Bundle 'nvie/vim-flake8'
 Bundle 'flazz/vim-colorschemes'
 Bundle 'w0ng/vim-hybrid'
 Bundle 'klen/python-mode'
+Bundle 'tpope/vim-surround'
 
 filetype on
 filetype plugin indent on
