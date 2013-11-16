@@ -32,6 +32,20 @@ Bundle 'flazz/vim-colorschemes'
 Bundle 'w0ng/vim-hybrid'
 Bundle 'klen/python-mode'
 Bundle 'tpope/vim-surround'
+Bundle 'fisadev/vim-debug.vim'
+Bundle 'fisadev/FixedTaskList.vim'
+Bundle 'fisadev/fisa-vim-colorscheme'
+Bundle 'majutsushi/tagbar'
+Bundle 'rosenfeld/conque-term'
+Bundle 'Townk/vim-autoclose'
+" Snippets manager (SnipMate), dependencies, and snippets repo
+Bundle 'MarcWeber/vim-addon-mw-utils'
+Bundle 'tomtom/tlib_vim'
+Bundle 'honza/vim-snippets'
+Bundle 'garbas/vim-snipmate'
+Bundle 'fisadev/vim-isort'
+Bundle 'matchit.zip'
+Bundle 'YankRing.vim'
 
 filetype on
 filetype plugin indent on
