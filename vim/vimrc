@@ -53,9 +53,14 @@ filetype plugin indent on
 
 "Color setup
 syntax on
-let g:solarized_termcolors=256
-set background=dark
-colorscheme solarized
+if has('gui_running')
+    set background=dark
+    colorscheme solarized
+else
+    let g:solarized_termcolors=256
+    set background=dark
+    colorscheme solarized
+endif
 highlight Pmenu ctermbg=7 ctermfg=0 guibg=blue
 highlight PmenuSel ctermbg=4 ctermfg=7 guibg=blue guifg=white
 
@@ -76,6 +81,7 @@ set smarttab
 "Fold defaults
 "set foldcolumn=3
 set foldmethod=syntax
+set foldlevel=99
 "set foldmethod=indent
 "Useful hints
 set showmatch " показывать парные скобки
