@@ -167,9 +167,9 @@ vmap <silent><F11> <esc>:Gcommit<cr>
 let mapleader = "\\"
 "let g:NERDUncomLineMap='<leader>C'
 " автодополнение скобок 
-inoremap <silent> {<CR> {<CR>}<Esc>O
-inoremap " ""<left>
-inoremap ( ()<left>
+"inoremap <silent> {<CR> {<CR>}<Esc>O
+"inoremap " ""<left>
+"inoremap ( ()<left>
 
 " make
 nmap <silent><leader>m :w<CR>:syntax<space>on<CR>:make<CR>
