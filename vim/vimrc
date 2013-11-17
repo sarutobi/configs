@@ -38,6 +38,7 @@ Bundle 'fisadev/fisa-vim-colorscheme'
 Bundle 'majutsushi/tagbar'
 Bundle 'rosenfeld/conque-term'
 Bundle 'Townk/vim-autoclose'
+Bundle 'altercation/vim-colors-solarized.git'
 " Snippets manager (SnipMate), dependencies, and snippets repo
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
@@ -52,9 +53,9 @@ filetype plugin indent on
 
 "Color setup
 syntax on
-let g:rehash256=1
-colorscheme molokai 
+let g:solarized_termcolors=256
 set background=dark
+colorscheme solarized
 highlight Pmenu ctermbg=7 ctermfg=0 guibg=blue
 highlight PmenuSel ctermbg=4 ctermfg=7 guibg=blue guifg=white
 
