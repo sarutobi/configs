@@ -165,6 +165,10 @@ vmap <silent><F11> <esc>:Gcommit<cr>
 "Useful keymaps
 "------------------
 let mapleader = "\\"
+map <F2> :NerdTreeToggle<cr>
+map <F3> :MBEToggle<cr>
+map <F4> :Tagbar<cr>
+
 "let g:NERDUncomLineMap='<leader>C'
 " автодополнение скобок 
 "inoremap <silent> {<CR> {<CR>}<Esc>O
