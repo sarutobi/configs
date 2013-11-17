@@ -57,9 +57,8 @@ if has('gui_running')
     set background=dark
     colorscheme solarized
 else
-    let g:solarized_termcolors=256
     set background=dark
-    colorscheme solarized
+    colorscheme wombat256
 endif
 highlight Pmenu ctermbg=7 ctermfg=0 guibg=blue
 highlight PmenuSel ctermbg=4 ctermfg=7 guibg=blue guifg=white
@@ -103,10 +102,6 @@ set mousemodel=popup
 
 " NERDTree
 let NERDTreeIgnore=['\.pyc$', '\~$']
-nmap <silent><F2> <esc>:NERDTreeToggle<CR>
-imap <silent><F2> <esc>:NERDTreeToggle<CR>
-vmap <silent><F2> <esc>:NERDTreeToggle<CR>
-noremap <silent><leader>P :NERDTreeToggle<CR>
 
 " NERDCommenter
 let NERDCommentWholeLinesInVMode=1
@@ -115,20 +110,6 @@ let NERDSpaceDelims=1
 let NERDRemoveExtraSpaces=1
 let NERDMapleader='.c'
 
-" neocomplcache
-
-
-
-" TagList
-"let Tlist_Process_File_Always=1
-"let Tlist_Auto_Update=1
-"let Tlist_File_Fold_Auto_Close=1
-"let Tlist_GainFocus_On_ToggleOpen=1
-"let Tlist_Close_On_Select=1
-"let Tlist_Use_Right_Window=1
-"let Tlist_Display_Tag_Scope=1
-"let Tlist_Enable_Fold_Column=0
-"let Tlist_Show_Menu=1
 
 " MiniBufExplorer
 
@@ -144,30 +125,19 @@ let loaded_bufexplorer=1
 "let g:bufExplorerSplitRight=1
 "let g:bufExplorerSplitVertical=0
 "let g:bufExplorerUseCurrentWindow=1
-nmap <silent> <leader>b :MBEToggle<CR>
-nmap <silent><F3> <esc>:MBEToggle<cr>
-imap <silent><F3> <esc>:MBEToggle<cr>
-vmap <silent><F3> <esc>:MBEToggle<cr>
-
-
-"noremap <silent><leader>t :TlistToggle<CR>
-
-" Fugitive
-
-nmap <silent><F10> <esc>:Gstatus<cr>
-imap <silent><F10> <esc>:Gstatus<cr>
-vmap <silent><F10> <esc>:Gstatus<cr>
-nmap <silent><F11> <esc>:Gcommit<cr>
-imap <silent><F11> <esc>:Gcommit<cr>
-vmap <silent><F11> <esc>:Gcommit<cr>
-
+" autocmd CursormovedI * if pumvisible == 0|pclose|endif
+" autocmd InsertLeave * if pumvisible == 0|pclose|endif
+" Fix to let ESC work as espected with Autoclose plugin
+let g:AutoClosePumvisible = {"ENTER": "\<C-Y>", "ESC": "\<ESC>"}
 "------------------
 "Useful keymaps
 "------------------
 let mapleader = "\\"
-map <F2> :NerdTreeToggle<cr>
-map <F3> :MBEToggle<cr>
-map <F4> :Tagbar<cr>
+noremap <F2> :NERDTreeToggle<cr>
+noremap <F3> :MBEToggle<cr>
+noremap <F4> :Tagbar<cr>
+noremap <silent><F11> <esc>:Gcommit<cr>
+noremap <silent><F10> <esc>:Gstatus<cr>
 
 "let g:NERDUncomLineMap='<leader>C'
 " автодополнение скобок 
