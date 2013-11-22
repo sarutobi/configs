@@ -26,7 +26,7 @@ Bundle 'majutsushi/tagbar'
 Bundle 'tpope/vim-fugitive'
 Bundle 'itchyny/lightline.vim'
 Bundle 'gmarik/vundle'
-" Bundle 'Valloric/YouCompleteMe'
+Bundle 'Valloric/YouCompleteMe'
 Bundle 'nvie/vim-flake8'
 Bundle 'flazz/vim-colorschemes'
 Bundle 'w0ng/vim-hybrid'
@@ -112,7 +112,6 @@ let NERDMapleader='.c'
 
 
 " MiniBufExplorer
-
 let g:miniBufExplTabWrap=1
 let g:miniBufExplMaxSize=1
 let g:miniBufExplorerMoreThanOne=0
@@ -129,6 +128,11 @@ let loaded_bufexplorer=1
 " autocmd InsertLeave * if pumvisible == 0|pclose|endif
 " Fix to let ESC work as espected with Autoclose plugin
 let g:AutoClosePumvisible = {"ENTER": "\<C-Y>", "ESC": "\<ESC>"}
+
+" Tagbar
+let g:tagbar_autofocus=1
+let g:tagbar_sort=1
+
 "------------------
 "Useful keymaps
 "------------------
