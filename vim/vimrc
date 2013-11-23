@@ -112,9 +112,9 @@ let NERDMapleader='.c'
 
 
 " MiniBufExplorer
+let g:miniBufExplAutoStart=0
 let g:miniBufExplTabWrap=1
 let g:miniBufExplMaxSize=1
-let g:miniBufExplorerMoreThanOne=0
 let loaded_bufexplorer=1
 "let g:bufExplorerDefaultHelp=1
 "let g:bufExplorerDetailedHelp=1
