@@ -267,6 +267,9 @@ let g:lightline = {
 let g:pymode_lint_write=0
 let g:pymode_lint_ignore=""
 let g:pymode_rope = 0
+" Snipmate remappings
+imap <C-J> <Plug>snipMateNextOrTrigger
+smap <C-J> <Plug>snipMateNextOrTrigger
 
 "------------------
 "Useful keymaps
