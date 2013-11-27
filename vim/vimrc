@@ -32,7 +32,7 @@ Bundle 'flazz/vim-colorschemes'
 Bundle 'w0ng/vim-hybrid'
 Bundle 'klen/python-mode'
 Bundle 'tpope/vim-surround'
-Bundle 'fisadev/vim-debug.vim'
+" Bundle 'fisadev/vim-debug.vim'
 Bundle 'fisadev/FixedTaskList.vim'
 Bundle 'fisadev/fisa-vim-colorscheme'
 Bundle 'majutsushi/tagbar'
@@ -263,6 +263,11 @@ let g:lightline = {
 	let g:vimfiler_force_overwrite_statusline = 0
 	let g:vimshell_force_overwrite_statusline = 0
 
+" python-mode settings
+let g:pymode_lint_write=0
+let g:pymode_lint_ignore=""
+let g:pymode_rope = 0
+
 "------------------
 "Useful keymaps
 "------------------
@@ -274,36 +279,18 @@ noremap <silent><F11> <esc>:Gcommit<cr>
 noremap <silent><F10> <esc>:Gstatus<cr>
 
 "let g:NERDUncomLineMap='<leader>C'
-" автодополнение скобок 
-"inoremap <silent> {<CR> {<CR>}<Esc>O
-"inoremap " ""<left>
-"inoremap ( ()<left>
 
-" make
-nmap <silent><leader>m :w<CR>:syntax<space>on<CR>:make<CR>
 
 " выход из редактора
-" nmap <leader>x :TlistSessionSave session.tags<CR>y<CR>:wqa<CR>
-nmap <silent> <leader>x :wa<CR>:TlistSessionSave session.tags<CR>y<CR>:qa<CR>
 nmap <silent> <leader>q :qa<CR>
 
-" nmap <silent> <F10> :wqa<CR>
-" imap <silent> <F10> <ESC>:wqa<CR>
-" map <silent><leader>x :wqa<CR>
 
 noremap <silent> <leader>mb :MarksBrowser<CR>
-" noremap <silent> <leader>w :SBufExplorer<CR>
-" noremap <silent> <leader>a :Inc<CR>
-
-" noremap <silent> <leader>d :ToggleQuickfix<CR>
 
 nnoremap <silent> <leader>W :set<Space>nowrap!<CR>
 nnoremap <silent> <leader>n :set<Space>nu!<CR>
-"noremap <silent> <C-h> :set nocursorline<CR>:wincmd h<CR>:set cursorline<CR>
-"noremap <silent> <C-j> :set nocursorline<CR>:wincmd j<CR>:set cursorline<CR>
-"noremap <silent> <C-k> :set nocursorline<CR>:wincmd k<CR>:set cursorline<CR>
-"noremap <silent> <C-l> :set nocursorline<CR>:wincmd l<CR>:set cursorline<CR>
 
+" Encoding menu
 set wildmenu
 set wcm=<Tab>
 menu Encoding.koi8-r :e ++enc=koi8-r<CR>
