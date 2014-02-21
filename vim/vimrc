@@ -6,6 +6,10 @@ set history=500 " длина истории команд
 set undolevels=100 " память отмен
 set ttyfast " ???
 
+set nobackup
+set nowritebackup
+set noswapfile
+
 filetype off
 
 "Pathogen
