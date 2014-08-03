@@ -23,7 +23,6 @@ call vundle#rc()
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
-Bundle 'Shougo/neocomplcache'
 Bundle 'scrooloose/syntastic'
 Bundle 'fholgado/minibufexpl.vim'
 Bundle 'majutsushi/tagbar'
@@ -36,7 +35,6 @@ Bundle 'flazz/vim-colorschemes'
 Bundle 'w0ng/vim-hybrid'
 Bundle 'klen/python-mode'
 Bundle 'tpope/vim-surround'
-" Bundle 'fisadev/vim-debug.vim'
 Bundle 'fisadev/FixedTaskList.vim'
 Bundle 'fisadev/fisa-vim-colorscheme'
 Bundle 'rosenfeld/conque-term'
@@ -46,7 +44,7 @@ Bundle 'altercation/vim-colors-solarized.git'
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
 Bundle 'honza/vim-snippets'
-Bundle 'garbas/vim-snipmate'
+Bundle 'Sirver/ultisnips'
 Bundle 'fisadev/vim-isort'
 Bundle 'matchit.zip'
 Bundle 'YankRing.vim'
@@ -273,6 +271,10 @@ let g:pymode_rope = 0
 " Snipmate remappings
 imap <C-J> <Plug>snipMateNextOrTrigger
 smap <C-J> <Plug>snipMateNextOrTrigger
+" UltiSnips mappings
+let g:UltiSnipsExpandTrigger="<c-k>"
+let g:UltiSnipsJumpForwardTrigger="<c-k>"
+let g:UltiSnipsJumpBackwardTrigger="<s-c-j>"
 
 "------------------
 "Useful keymaps
