@@ -54,13 +54,13 @@ filetype plugin indent on
 
 "Color setup
 syntax on
-if has('gui_running')
+" if has('gui_running')
     set background=dark
     colorscheme solarized
-else
-    set background=dark
-    colorscheme wombat256
-endif
+" else
+    " set background=dark
+    " colorscheme wombat256
+" endif
 highlight Pmenu ctermbg=7 ctermfg=0 guibg=blue
 highlight PmenuSel ctermbg=4 ctermfg=7 guibg=blue guifg=white
 
