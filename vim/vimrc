@@ -276,6 +276,9 @@ let g:UltiSnipsExpandTrigger="<c-k>"
 let g:UltiSnipsJumpForwardTrigger="<c-k>"
 let g:UltiSnipsJumpBackwardTrigger="<s-c-j>"
 
+" YCM
+let g:ycm_server_python_interpreter="/usr/bin/python"
+
 "------------------
 "Useful keymaps
 "------------------
