@@ -48,6 +48,8 @@ Bundle 'Sirver/ultisnips'
 Bundle 'fisadev/vim-isort'
 Bundle 'matchit.zip'
 Bundle 'YankRing.vim'
+"Db interactive
+Bundle 'https://tpope.io/vim/dadbod.git'
 
 filetype on
 filetype plugin indent on
@@ -277,7 +279,7 @@ let g:UltiSnipsJumpForwardTrigger="<c-k>"
 let g:UltiSnipsJumpBackwardTrigger="<s-c-j>"
 
 " YCM
-let g:ycm_server_python_interpreter="/usr/bin/python"
+" let g:ycm_server_python_interpreter="/usr/bin/python3"
 
 "------------------
 "Useful keymaps
