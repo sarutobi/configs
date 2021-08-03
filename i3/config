@@ -206,7 +206,7 @@ for_window [class="^jetbrains-.+"][ title="Commit Changes"] floating enable
 for_window [class="jetbrains-idea" title="win0"] floating enable
 
 assign [class="Gnucash$"] $gnucash
-assign [class="Firefox$"] $firefox
+assign [class="Firefox-esr$"] $firefox
 assign [class="Google-chrome$"] $chrome
 assign [class="Mate-terminal$"] $terminal
 
